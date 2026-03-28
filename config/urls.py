@@ -20,5 +20,5 @@ from config.graphql_view import graphql_view as graphql_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('graphql/', graphql_views, name='graphql'),
+    path('graphql', graphql_views, name='graphql'),
 ]

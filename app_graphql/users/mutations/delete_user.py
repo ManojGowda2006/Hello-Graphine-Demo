@@ -1,6 +1,5 @@
 import graphene
-import users.models as User
-import users.types as UserType
+from users.models import User
 
 class DeleteUser(graphene.Mutation):
     class Arguments:

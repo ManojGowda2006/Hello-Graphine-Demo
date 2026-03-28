@@ -1,6 +1,6 @@
 import graphene
-import users.models as User
-import users.types as UserType
+from users.models import User
+from ..types import UserType
 
 class UpdateUser(graphene.Mutation):
     class Arguments:

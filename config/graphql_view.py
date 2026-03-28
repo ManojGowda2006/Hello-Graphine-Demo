@@ -7,13 +7,14 @@ import graphene
 
 from app_graphql.users.schema import Query as UsersQuery, Mutation as UsersMutation
 from app_graphql.orders.schema import Query as OrdersQuery, Mutation as OrdersMutation
+from app_graphql.permissions.schema import Query as PermissionsQuery, Mutation as PermissionsMutation
 
 
-class RootQuery(UsersQuery, OrdersQuery, graphene.ObjectType):
+class RootQuery(UsersQuery, OrdersQuery, PermissionsQuery, graphene.ObjectType):
     pass
 
 
-class RootMutation(UsersMutation, OrdersMutation, graphene.ObjectType):
+class RootMutation(UsersMutation, OrdersMutation, PermissionsMutation, graphene.ObjectType):
     pass
 
 

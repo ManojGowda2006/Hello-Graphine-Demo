@@ -1,6 +1,6 @@
 import graphene
 from orders.models import Order
-from orders.types import OrderType
+from ..types import OrderType
 
 class UpdateOrder(graphene.Mutation):
     class Arguments:
